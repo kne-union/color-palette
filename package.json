@@ -1,0 +1,45 @@
+{
+  "name": "@kne/color-palette",
+  "version": "0.1.0",
+  "description": "ant.design 的 colorPalette javascript移植版本",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "umd": "dist/color-palette.js",
+  "umd:min": "dist/color-palette.min.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start-demo": "cd example&&npm start",
+    "start": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kne-union/color-palette.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "slash"
+  ],
+  "author": "linzp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kne-union/color-palette/issues"
+  },
+  "homepage": "https://github.com/kne-union/color-palette#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.7",
+    "babel-preset-react-app": "^9.1.0",
+    "rollup": "^1.27.14",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-terser": "^5.1.3"
+  },
+  "dependencies": {
+    "tinycolor2": "^1.4.2"
+  }
+}
